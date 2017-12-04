@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="cr6ntb" name="AllpassPhaser" displaySplashScreen="1" reportAppUsage="1"
+              splashScreenColour="Dark" projectType="audioplug" version="1.0.0"
+              bundleIdentifier="com.yourcompany.AllpassPhaser" includeBinaryInAppConfig="1"
+              cppLanguageStandard="11" buildVST="1" buildVST3="0" buildAU="0"
+              buildAUv3="0" buildRTAS="0" buildAAX="0" buildStandalone="1"
+              enableIAA="0" pluginName="AllpassPhaser" pluginDesc="AllpassPhaser"
+              pluginManufacturer="yourcompany" pluginManufacturerCode="Manu"
+              pluginCode="Cr6n" pluginChannelConfigs="" pluginIsSynth="0" pluginWantsMidiIn="0"
+              pluginProducesMidiOut="0" pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="0"
+              pluginAUExportPrefix="AllpassPhaserAU" pluginRTASCategory=""
+              aaxIdentifier="com.yourcompany.AllpassPhaser" pluginAAXCategory="AAX_ePlugInCategory_Dynamics"
+              jucerVersion="5.1.1">
+  <MAINGROUP id="KSGjQs" name="AllpassPhaser">
+    <GROUP id="{3797A69D-716C-2129-4CDC-7644F0C1B5E6}" name="Resources">
+      <GROUP id="{5E963AFF-15F9-C824-AAC7-FC8F92C477B7}" name="Fonts">
+        <GROUP id="{4F296209-E39A-2BB6-E06E-5BE1AA91B018}" name="arvin">
+          <FILE id="QH1oVl" name="Arvin License.txt.txt" compile="0" resource="1"
+                file="../../Resources/Fonts/arvin/Arvin License.txt.txt"/>
+          <FILE id="BfrTsN" name="Arvin Light Italic.ttf" compile="0" resource="1"
+                file="../../Resources/Fonts/arvin/Arvin Light Italic.ttf"/>
+          <FILE id="NculqQ" name="Arvin Regular Italic.ttf" compile="0" resource="1"
+                file="../../Resources/Fonts/arvin/Arvin Regular Italic.ttf"/>
+          <FILE id="umoeNe" name="Arvin Regular.ttf" compile="0" resource="1"
+                file="../../Resources/Fonts/arvin/Arvin Regular.ttf"/>
+          <FILE id="vdU2dj" name="Arvin typeface 1.png" compile="0" resource="1"
+                file="../../Resources/Fonts/arvin/Arvin typeface 1.png"/>
+          <FILE id="QWdXAw" name="Arvin typeface 2.png" compile="0" resource="1"
+                file="../../Resources/Fonts/arvin/Arvin typeface 2.png"/>
+          <FILE id="wSuCdi" name="Arvin typeface 3.png" compile="0" resource="1"
+                file="../../Resources/Fonts/arvin/Arvin typeface 3.png"/>
+          <FILE id="x7Ttft" name="ArvinLight.ttf" compile="0" resource="1" file="../../Resources/Fonts/arvin/ArvinLight.ttf"/>
+        </GROUP>
+        <GROUP id="{C9F72A55-BFE8-49C3-975D-595FB200EB39}" name="big-pixel-shadowed-demo">
+          <FILE id="Nbqy7O" name="Big Pixel demo.otf" compile="0" resource="1"
+                file="../../Resources/Fonts/big-pixel-shadowed-demo/Big Pixel demo.otf"/>
+          <FILE id="FP8SPS" name="Big Pixel Light demo.otf" compile="0" resource="1"
+                file="../../Resources/Fonts/big-pixel-shadowed-demo/Big Pixel Light demo.otf"/>
+          <FILE id="TsNeZV" name="Big Pixel Shadow demo.otf" compile="0" resource="1"
+                file="../../Resources/Fonts/big-pixel-shadowed-demo/Big Pixel Shadow demo.otf"/>
+          <FILE id="kKHehp" name="big_pixel_800.png" compile="0" resource="1"
+                file="../../Resources/Fonts/big-pixel-shadowed-demo/big_pixel_800.png"/>
+          <FILE id="Chiyh9" name="Read_Me.txt" compile="0" resource="1" file="../../Resources/Fonts/big-pixel-shadowed-demo/Read_Me.txt"/>
+        </GROUP>
+        <GROUP id="{8FDE0ABA-CDBA-29E3-0307-87CB3EF75049}" name="bombing">
+          <FILE id="sEyd6h" name="Bombing.ttf" compile="0" resource="1" file="../../Resources/Fonts/bombing/Bombing.ttf"/>
+          <FILE id="VbWaA8" name="Terms of Use End User Lisence Agreement.txt"
+                compile="0" resource="1" file="../../Resources/Fonts/bombing/Terms of Use End User Lisence Agreement.txt"/>
+        </GROUP>
+        <GROUP id="{AC9AF5B3-5FD5-F6C7-4527-6D42AD0EEE1D}" name="fortunate-demo">
+          <FILE id="j9SwYi" name="FortunateDEMO.otf" compile="0" resource="1"
+                file="../../Resources/Fonts/fortunate-demo/FortunateDEMO.otf"/>
+          <FILE id="t2Wlm2" name="pizzadudedotdk.txt" compile="0" resource="1"
+                file="../../Resources/Fonts/fortunate-demo/pizzadudedotdk.txt"/>
+        </GROUP>
+        <GROUP id="{2C3F0353-A983-6297-618F-2925CB4F9937}" name="LOMBOK_TYPEFACE">
+          <FILE id="QBiROb" name="Author_Website.webarchive" compile="0" resource="1"
+                file="../../Resources/Fonts/LOMBOK_TYPEFACE/Author_Website.webarchive"/>
+          <FILE id="YkgM6t" name="LICENSE_PERSONAL_USE_ONLY.rtf" compile="0"
+                resource="1" file="../../Resources/Fonts/LOMBOK_TYPEFACE/LICENSE_PERSONAL_USE_ONLY.rtf"/>
+          <FILE id="ussTXe" name="Lombok.otf" compile="0" resource="1" file="../../Resources/Fonts/LOMBOK_TYPEFACE/Lombok.otf"/>
+        </GROUP>
+        <GROUP id="{B93116BE-67A5-308F-6720-4A8DFBAA7CDA}" name="mindmonkey">
+          <FILE id="rRECSY" name="mindmonkey.gif" compile="0" resource="1" file="../../Resources/Fonts/mindmonkey/mindmonkey.gif"/>
+          <FILE id="NWL0Sh" name="Mindmonkey.ttf" compile="0" resource="1" file="../../Resources/Fonts/mindmonkey/Mindmonkey.ttf"/>
+          <FILE id="uaAzQO" name="Read me.txt" compile="0" resource="1" file="../../Resources/Fonts/mindmonkey/Read me.txt"/>
+        </GROUP>
+        <GROUP id="{92EBF766-B79C-8485-6BAB-2DC6FBB09BAA}" name="Norsk Font">
+          <FILE id="LIrWb7" name="Norsk Free Font License.pdf" compile="0" resource="1"
+                file="../../Resources/Fonts/Norsk Font/Norsk Free Font License.pdf"/>
+          <FILE id="kCKkfD" name="Norsk.ttf" compile="0" resource="1" file="../../Resources/Fonts/Norsk Font/Norsk.ttf"/>
+          <FILE id="IYnqMu" name="norskpicture.png" compile="0" resource="1"
+                file="../../Resources/Fonts/Norsk Font/norskpicture.png"/>
+        </GROUP>
+        <GROUP id="{2A1B274D-5601-91AF-F8ED-4D4FF73C273B}" name="SH Pinscher Font">
+          <FILE id="IGaNvm" name="license.pdf" compile="0" resource="1" file="../../Resources/Fonts/SH Pinscher Font/license.pdf"/>
+          <FILE id="LskgWK" name="SHPinscher-Regular.otf" compile="0" resource="1"
+                file="../../Resources/Fonts/SH Pinscher Font/SHPinscher-Regular.otf"/>
+        </GROUP>
+        <GROUP id="{F1E3239F-10B6-9AB1-65E5-94EE8D8B79A9}" name="SHKODER 1989 FREE">
+          <FILE id="njrYV7" name="0.SHKODER 1989.png" compile="0" resource="1"
+                file="../../Resources/Fonts/SHKODER 1989 FREE/0.SHKODER 1989.png"/>
+          <FILE id="tMr3Z0" name="LICENSE.pdf" compile="0" resource="1" file="../../Resources/Fonts/SHKODER 1989 FREE/LICENSE.pdf"/>
+          <FILE id="q5RBJu" name="LICENSE.txt" compile="0" resource="1" file="../../Resources/Fonts/SHKODER 1989 FREE/LICENSE.txt"/>
+          <FILE id="Mtz6kS" name="Shkoder 1989 Black.otf" compile="0" resource="1"
+                file="../../Resources/Fonts/SHKODER 1989 FREE/Shkoder 1989 Black.otf"/>
+          <FILE id="r7O2zu" name="Shkoder 1989 Light.otf" compile="0" resource="1"
+                file="../../Resources/Fonts/SHKODER 1989 FREE/Shkoder 1989 Light.otf"/>
+        </GROUP>
+        <GROUP id="{6754D16B-2C85-639C-ED8C-E497363A277A}" name="VotuTypeface">
+          <FILE id="PGgQuh" name="_Votu Frames.png" compile="0" resource="1"
+                file="../../Resources/Fonts/VotuTypeface/_Votu Frames.png"/>
+          <FILE id="PCZ0Vc" name="Votu Frames 01.png" compile="0" resource="1"
+                file="../../Resources/Fonts/VotuTypeface/Votu Frames 01.png"/>
+          <FILE id="OvSiic" name="VotuLicense.pdf" compile="0" resource="1" file="../../Resources/Fonts/VotuTypeface/VotuLicense.pdf"/>
+          <FILE id="IqMjsj" name="VotuTypeface.ttf" compile="0" resource="1"
+                file="../../Resources/Fonts/VotuTypeface/VotuTypeface.ttf"/>
+        </GROUP>
+        <FILE id="Ue2Bre" name="ZEBRAIRR.TTF" compile="0" resource="1" file="../../Resources/Fonts/ZEBRAIRR.TTF"/>
+      </GROUP>
+    </GROUP>
+    <GROUP id="{31E5D3EC-50E5-BDB5-DD9B-1DA945830519}" name="Source">
+      <FILE id="QWKgxD" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="NwCgOY" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="ghiXrZ" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="CHuZ1o" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="AllpassPhaser"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="AllpassPhaser"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+</JUCERPROJECT>
