@@ -45,15 +45,17 @@ AllpassPhaserAudioProcessorEditor::AllpassPhaserAudioProcessorEditor (AllpassPha
     m_rateSlider.setSliderStyle(juce::Slider::RotaryVerticalDrag);
     m_rateSlider.setTextBoxStyle(juce::Slider::NoTextBox, false, 0, 0);
     m_rateSlider.setTextValueSuffix(" Hz");
-    m_rateSlider.setPopupDisplayEnabled(true, this);
-    m_rateSlider.setLookAndFeel(&m_customLAF);
+    m_rateSlider.setPopupDisplayEnabled(true, true, this);
+    m_rateSlider.addListener(this);
+//    m_rateSlider.setLookAndFeel(&m_customLAF);
     m_rateSliderAttachment = new juce::AudioProcessorValueTreeState::SliderAttachment(vts, "rate", m_rateSlider);
     
     addAndMakeVisible(&m_feedbackSlider);
     m_feedbackSlider.setSliderStyle(juce::Slider::RotaryVerticalDrag);
     m_feedbackSlider.setTextBoxStyle(juce::Slider::NoTextBox, false, 0, 0);
-    m_feedbackSlider.setPopupDisplayEnabled(true, this);
-    m_feedbackSlider.setLookAndFeel(&m_customLAF);
+    m_feedbackSlider.setPopupDisplayEnabled(true, true, this);
+    m_feedbackSlider.addListener(this);
+//    m_feedbackSlider.setLookAndFeel(&m_customLAF);
     m_feedbackSliderAttachment = new juce::AudioProcessorValueTreeState::SliderAttachment(vts, "feedback", m_feedbackSlider);
 
 
@@ -62,8 +64,9 @@ AllpassPhaserAudioProcessorEditor::AllpassPhaserAudioProcessorEditor (AllpassPha
     m_dryWetSlider.setSliderStyle(juce::Slider::RotaryVerticalDrag);
     m_dryWetSlider.setTextBoxStyle(juce::Slider::NoTextBox, false, 0, 0);
     m_dryWetSlider.setTextValueSuffix(" ms");
-    m_dryWetSlider.setPopupDisplayEnabled(true, this);
-    m_dryWetSlider.setLookAndFeel(&m_customLAF);
+    m_dryWetSlider.setPopupDisplayEnabled(true, true, this);
+    m_dryWetSlider.addListener(this);
+//    m_dryWetSlider.setLookAndFeel(&m_customLAF);
     m_dryWetSliderAttachment = new juce::AudioProcessorValueTreeState::SliderAttachment(vts, "dryWet", m_dryWetSlider);
 
     setSize (400, 300);
@@ -95,6 +98,24 @@ void AllpassPhaserAudioProcessorEditor::paint (Graphics& g)
     g.setFont(logoFont);
     g.setFont(20.f);
     g.drawFittedText("ALLPASS  |  PHASER", m_titleArea, Justification::centredLeft, 1);
+}
+
+void AllpassPhaserAudioProcessorEditor::sliderValueChanged(Slider* slider)
+{
+    if (slider  == &m_rateSlider)
+    {
+        processor.setModulationRate(slider->getValue());
+    }
+    
+    if (slider  == &m_feedbackSlider)
+    {
+        processor.setFeedbackLevel(slider->getValue());
+    }
+    
+    if (slider  == &m_dryWetSlider)
+    {
+        processor.setDepthLevel(slider->getValue());
+    }
 }
 
 void AllpassPhaserAudioProcessorEditor::resized()

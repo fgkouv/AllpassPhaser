@@ -37,7 +37,7 @@ AllpassPhaserAudioProcessor::AllpassPhaserAudioProcessor()
     m_parameters.createAndAddParameter ("feedback",                       // parameter ID
                                         "Feedback",                     // parameter name
                                         "",                                           // parameter label (suffix)
-                                        NormalisableRange<float> (0.f, 1.f, 0.01f),  // range
+                                        NormalisableRange<float> (0.f, 0.99f, 0.01f),  // range
                                         0.f,                                            // default value
                                         nullptr,
                                         nullptr);
@@ -115,8 +115,7 @@ void AllpassPhaserAudioProcessor::changeProgramName (int index, const String& ne
 //==============================================================================
 void AllpassPhaserAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBlock)
 {
-    // Use this method as the place to do any pre-playback
-    // initialisation that you need..
+    m_allpassPhaser.prepareToPlay(samplesPerBlock, sampleRate);
 }
 
 void AllpassPhaserAudioProcessor::releaseResources()
@@ -151,26 +150,7 @@ bool AllpassPhaserAudioProcessor::isBusesLayoutSupported (const BusesLayout& lay
 
 void AllpassPhaserAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuffer& midiMessages)
 {
-    const int totalNumInputChannels  = getTotalNumInputChannels();
-    const int totalNumOutputChannels = getTotalNumOutputChannels();
-
-    // In case we have more outputs than inputs, this code clears any output
-    // channels that didn't contain input data, (because these aren't
-    // guaranteed to be empty - they may contain garbage).
-    // This is here to avoid people getting screaming feedback
-    // when they first compile a plugin, but obviously you don't need to keep
-    // this code if your algorithm always overwrites all the output channels.
-    for (int i = totalNumInputChannels; i < totalNumOutputChannels; ++i)
-        buffer.clear (i, 0, buffer.getNumSamples());
-
-    // This is the place where you'd normally do the guts of your plugin's
-    // audio processing...
-    for (int channel = 0; channel < totalNumInputChannels; ++channel)
-    {
-        float* channelData = buffer.getWritePointer (channel);
-
-        // ..do something to the data...
-    }
+    m_allpassPhaser.processBlock(buffer);
 }
 
 //==============================================================================
@@ -210,3 +190,22 @@ AudioProcessor* JUCE_CALLTYPE createPluginFilter()
 {
     return new AllpassPhaserAudioProcessor();
 }
+
+//==============================================================================
+
+
+void AllpassPhaserAudioProcessor::setModulationRate(float newRate)
+{
+    m_allpassPhaser.setModulationRate(newRate);
+}
+
+void AllpassPhaserAudioProcessor::setFeedbackLevel(float newFeedback)
+{
+    m_allpassPhaser.setFeedbackLevel(newFeedback);
+}
+
+void AllpassPhaserAudioProcessor::setDepthLevel(float newDepth)
+{
+    m_allpassPhaser.setDepthLevel(newDepth);
+}
+

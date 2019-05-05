@@ -11,7 +11,7 @@
 #pragma once
 
 #include "../JuceLibraryCode/JuceHeader.h"
-
+#include "Audio/AllpassPhaserWithFeedback.h"
 
 
 class AllpassPhaserAudioProcessor  : public AudioProcessor
@@ -52,12 +52,20 @@ public:
     //==============================================================================
     void getStateInformation (MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
-
+    
+    //==============================================================================
+    void setModulationRate(float newRate);
+    
+    void setFeedbackLevel(float newFeedback);
+    
+    void setDepthLevel(float newDepth);
+    
 private:
 
     AudioProcessorValueTreeState m_parameters;
     
-    
+    AllpassPhaserWithFeedback m_allpassPhaser;
+
     
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (AllpassPhaserAudioProcessor)
 };

@@ -156,7 +156,7 @@ public:
 
 
 
-class AllpassPhaserAudioProcessorEditor  : public AudioProcessorEditor
+class AllpassPhaserAudioProcessorEditor  : public AudioProcessorEditor, public Slider::Listener
 {
 public:
     AllpassPhaserAudioProcessorEditor (AllpassPhaserAudioProcessor& p, AudioProcessorValueTreeState& vts);
@@ -164,7 +164,9 @@ public:
 
     void paint (Graphics&) override;
     void resized() override;
-
+    
+    void sliderValueChanged (Slider* slider) override;
+    
 private:
     AllpassPhaserAudioProcessor& processor;
 
